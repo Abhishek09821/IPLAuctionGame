@@ -57,20 +57,6 @@ mRouter.get('/:roomId', auth, async (req, res) => {
 /* ── GET /api/points/:roomId ───────────────── */
 const pRouter = require('express').Router();
 
-pRouter.get('/:roomId', auth, async (req, res) => {
-  try {
-    const [rows] = await db.query(
-      `SELECT pt.*, t.name, t.short_name, t.color, t.emoji
-       FROM points pt
-       JOIN teams t ON t.id = pt.team_id
-       WHERE pt.room_id = ?
-       ORDER BY pt.points DESC, pt.nrr DESC`,
-      [req.params.roomId]
-    );
-    res.json(rows);
-  } catch (e) {
-    res.status(500).json({ error: e.message });
-  }
-});
+
 
 module.exports = { playersRouter: router, matchesRouter: mRouter, pointsRouter: pRouter };
