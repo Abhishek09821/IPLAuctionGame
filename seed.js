@@ -4,11 +4,11 @@ const pool = require('../src/config/db');
 
 const PLAYERS = [
   // Batsmen
-  { name:'Virat Kohli',       country:'India',       role:'Batsman',       base_price:2.00, rating:95, matches:230, batting_avg:48.0, strike_rate:130.0 },
-  { name:'Rohit Sharma',      country:'India',       role:'Batsman',       base_price:2.00, rating:92, matches:245, batting_avg:45.0, strike_rate:133.0 },
+  { name:'Virat Kohli',       country:'India',       role:'Batsman',       base_price:2.00, rating:96, matches:230, batting_avg:48.0, strike_rate:130.0 },
+  { name:'Rohit Sharma',      country:'India',       role:'Batsman',       base_price:2.00, rating:90, matches:245, batting_avg:45.0, strike_rate:133.0 },
   { name:'KL Rahul',          country:'India',       role:'Batsman',       base_price:2.00, rating:88, matches:110, batting_avg:47.0, strike_rate:136.0 },
   { name:'Shubman Gill',      country:'India',       role:'Batsman',       base_price:1.50, rating:86, matches:65,  batting_avg:44.0, strike_rate:140.0 },
-  { name:'David Warner',      country:'Australia',   role:'Batsman',       base_price:1.50, rating:85, matches:162, batting_avg:42.0, strike_rate:143.0 },
+  { name:'David Warner',      country:'Australia',   role:'Batsman',       base_price:1.50, rating:94, matches:162, batting_avg:42.0, strike_rate:143.0 },
   { name:'Jos Buttler',       country:'England',     role:'Batsman',       base_price:2.00, rating:90, matches:83,  batting_avg:50.0, strike_rate:149.0 },
   { name:'Faf du Plessis',    country:'South Africa',role:'Batsman',       base_price:1.00, rating:83, matches:130, batting_avg:38.0, strike_rate:138.0 },
   { name:'Yashasvi Jaiswal',  country:'India',       role:'Batsman',       base_price:0.40, rating:82, matches:30,  batting_avg:40.0, strike_rate:145.0 },
@@ -23,7 +23,7 @@ const PLAYERS = [
   { name:'Rinku Singh',       country:'India',       role:'Batsman',       base_price:0.20, rating:70, matches:28,  batting_avg:29.0, strike_rate:148.0 },
   { name:'Abhishek Sharma',   country:'India',       role:'Batsman',       base_price:0.20, rating:68, matches:25,  batting_avg:26.0, strike_rate:155.0 },
   // Wicket-Keepers
-  { name:'MS Dhoni',          country:'India',       role:'Wicket-Keeper', base_price:2.00, rating:88, matches:250, batting_avg:38.0, strike_rate:140.0 },
+  { name:'MS Dhoni',          country:'India',       role:'Wicket-Keeper', base_price:2.00, rating:90, matches:250, batting_avg:38.0, strike_rate:140.0 },
   { name:'Rishabh Pant',      country:'India',       role:'Wicket-Keeper', base_price:2.00, rating:87, matches:98,  batting_avg:40.0, strike_rate:149.0 },
   { name:'Sanju Samson',      country:'India',       role:'Wicket-Keeper', base_price:1.00, rating:84, matches:120, batting_avg:38.0, strike_rate:142.0 },
   { name:'Ishan Kishan',      country:'India',       role:'Wicket-Keeper', base_price:1.00, rating:82, matches:85,  batting_avg:36.0, strike_rate:138.0 },
