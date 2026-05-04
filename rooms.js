@@ -80,21 +80,5 @@ router.get('/:roomId', auth, async (req, res) => {
   }
 });
 
-/* ── GET /api/rooms/:roomId/squad/:teamId ──────── */
-router.get('/:roomId/squad/:teamId', auth, async (req, res) => {
-  const { roomId, teamId } = req.params;
-  try {
-    const [rows] = await db.query(
-      `SELECT p.*, a.sold_price
-       FROM auctions a
-       JOIN players p ON p.id = a.player_id
-       WHERE a.room_id = ? AND a.team_id = ?`,
-      [roomId, teamId]
-    );
-    res.json(rows);
-  } catch (e) {
-    res.status(500).json({ error: e.message });
-  }
-});
 
 module.exports = router;
