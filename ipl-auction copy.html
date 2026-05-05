@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏏 IPL Auction Simulator 2024</title>
+<title>🏏 IPL Auction Simulator 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -496,7 +496,7 @@ body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);mi
       <div class="fin-center">
         <div class="fin-info">
           <div class="tro">🏆</div>
-          <div class="fl">FINALISTS</div>
+          <div class="fl">Two of the Best</div>
           <div class="fn" id="fn1">—</div>
           <div style="color:var(--muted);margin:.25rem">vs</div>
           <div class="fn" id="fn2">—</div>
@@ -544,15 +544,15 @@ const TEAMS = [
 // role: B=Batsman Bl=Bowler AR=All-Rounder WK=Wicket-Keeper
 const PLAYERS = [
   // ── Batsmen
-  {id:1, n:'Virat Kohli',       r:'Batsman',      co:'India',      b:2,   rt:95, m:230,a:48,s:130},
-  {id:2, n:'Rohit Sharma',      r:'Batsman',      co:'India',      b:2,   rt:92, m:245,a:45,s:133},
-  {id:3, n:'KL Rahul',          r:'Batsman',      co:'India',      b:2,   rt:88, m:110,a:47,s:136},
-  {id:4, n:'Shubman Gill',      r:'Batsman',      co:'India',      b:1.5, rt:86, m:65, a:44,s:140},
-  {id:5, n:'David Warner',      r:'Batsman',      co:'Australia',  b:1.5, rt:85, m:162,a:42,s:143},
-  {id:6, n:'Jos Buttler',       r:'Batsman',      co:'England',    b:2,   rt:90, m:83, a:50,s:149},
-  {id:7, n:'Faf du Plessis',    r:'Batsman',      co:'S.Africa',   b:1,   rt:83, m:130,a:38,s:138},
+  {id:1, n:'Virat Kohli',       r:'Batsman',      co:'India',      b:2,   rt:97, m:230,a:48,s:130},
+  {id:2, n:'Rohit Sharma',      r:'Batsman',      co:'India',      b:2,   rt:90, m:245,a:45,s:133},
+  {id:3, n:'KL Rahul',          r:'Batsman',      co:'India',      b:2,   rt:90, m:110,a:47,s:136},
+  {id:4, n:'Shubman Gill',      r:'Batsman',      co:'India',      b:1.5, rt:89, m:65, a:44,s:140},
+  {id:5, n:'David Warner',      r:'Batsman',      co:'Australia',  b:1.5, rt:94, m:162,a:42,s:143},
+  {id:6, n:'Jos Buttler',       r:'Batsman',      co:'England',    b:2,   rt:91, m:83, a:50,s:149},
+  {id:7, n:'Faf du Plessis',    r:'Batsman',      co:'S.Africa',   b:1,   rt:88, m:130,a:38,s:138},
   {id:8, n:'Yashasvi Jaiswal',  r:'Batsman',      co:'India',      b:0.4, rt:82, m:30, a:40,s:145},
-  {id:9, n:'Shreyas Iyer',      r:'Batsman',      co:'India',      b:1.5, rt:84, m:98, a:36,s:132},
+  {id:9, n:'Shreyas Iyer',      r:'Batsman',      co:'India',      b:1.5, rt:88, m:98, a:36,s:132},
   {id:10,n:'Suryakumar Yadav', r:'Batsman',      co:'India',      b:2,   rt:91, m:120,a:44,s:157},
   {id:11,n:'Ruturaj Gaikwad',  r:'Batsman',      co:'India',      b:0.5, rt:81, m:60, a:41,s:137},
   {id:12,n:'Devon Conway',      r:'Batsman',      co:'New Zealand',b:0.5, rt:78, m:45, a:38,s:129},
@@ -563,8 +563,8 @@ const PLAYERS = [
   {id:57,n:'Rinku Singh',       r:'Batsman',      co:'India',      b:0.2, rt:70, m:28, a:29,s:148},
   {id:58,n:'Abhishek Sharma',   r:'Batsman',      co:'India',      b:0.2, rt:68, m:25, a:26,s:155},
   // ── Wicket-Keepers
-  {id:16,n:'MS Dhoni',          r:'Wicket-Keeper',co:'India',      b:2,   rt:88, m:250,a:38,s:140},
-  {id:17,n:'Rishabh Pant',      r:'Wicket-Keeper',co:'India',      b:2,   rt:87, m:98, a:40,s:149},
+  {id:16,n:'MS Dhoni',          r:'Wicket-Keeper',co:'India',      b:2,   rt:92, m:250,a:38,s:140},
+  {id:17,n:'Rishabh Pant',      r:'Wicket-Keeper',co:'India',      b:2,   rt:86, m:98, a:40,s:149},
   {id:18,n:'Sanju Samson',      r:'Wicket-Keeper',co:'India',      b:1,   rt:84, m:120,a:38,s:142},
   {id:19,n:'Ishan Kishan',      r:'Wicket-Keeper',co:'India',      b:1,   rt:82, m:85, a:36,s:138},
   {id:20,n:'Heinrich Klaasen',  r:'Wicket-Keeper',co:'S.Africa',   b:0.5, rt:80, m:55, a:35,s:148},
@@ -578,7 +578,7 @@ const PLAYERS = [
   {id:27,n:'Ben Stokes',        r:'All-Rounder',  co:'England',    b:2,   rt:86, m:43, a:28,s:138},
   {id:28,n:'Marcus Stoinis',    r:'All-Rounder',  co:'Australia',  b:1,   rt:79, m:90, a:25,s:145},
   {id:29,n:'Washington Sundar', r:'All-Rounder',  co:'India',      b:0.5, rt:76, m:70, a:18,s:122},
-  {id:30,n:'Sunil Narine',      r:'All-Rounder',  co:'W.Indies',   b:1.5, rt:85, m:175,a:21,s:162},
+  {id:30,n:'Sunil Narine',      r:'All-Rounder',  co:'W.Indies',   b:1.5, rt:92, m:175,a:21,s:162},
   {id:31,n:'Mitchell Marsh',    r:'All-Rounder',  co:'Australia',  b:1,   rt:78, m:75, a:25,s:147},
   {id:32,n:'Shardul Thakur',    r:'All-Rounder',  co:'India',      b:0.75,rt:74, m:85, a:19,s:155},
   {id:33,n:'Shivam Dube',       r:'All-Rounder',  co:'India',      b:0.4, rt:70, m:45, a:23,s:145},
@@ -586,11 +586,11 @@ const PLAYERS = [
   {id:35,n:'Jasprit Bumrah',    r:'Bowler',       co:'India',      b:2,   rt:97, m:130,ec:6.8,wk:145},
   {id:36,n:'Rashid Khan',       r:'Bowler',       co:'Afghanistan',b:2,   rt:94, m:90, ec:6.3,wk:135},
   {id:37,n:'Mohammed Shami',    r:'Bowler',       co:'India',      b:2,   rt:90, m:95, ec:8.0,wk:90 },
-  {id:38,n:'Yuzvendra Chahal',  r:'Bowler',       co:'India',      b:1,   rt:86, m:150,ec:7.6,wk:187},
+  {id:38,n:'Yuzvendra Chahal',  r:'Bowler',       co:'India',      b:1,   rt:89, m:150,ec:7.6,wk:187},
   {id:39,n:'Pat Cummins',       r:'Bowler',       co:'Australia',  b:1.5, rt:88, m:70, ec:8.2,wk:90 },
   {id:40,n:'Kagiso Rabada',     r:'Bowler',       co:'S.Africa',   b:1.5, rt:87, m:70, ec:8.4,wk:90 },
   {id:41,n:'Trent Boult',       r:'Bowler',       co:'New Zealand',b:1.5, rt:86, m:85, ec:8.0,wk:105},
-  {id:42,n:'Bhuvneshwar Kumar', r:'Bowler',       co:'India',      b:1,   rt:83, m:160,ec:7.9,wk:160},
+  {id:42,n:'Bhuvneshwar Kumar', r:'Bowler',       co:'India',      b:1,   rt:93, m:160,ec:7.9,wk:160},
   {id:43,n:'Arshdeep Singh',    r:'Bowler',       co:'India',      b:0.5, rt:81, m:65, ec:8.3,wk:75 },
   {id:44,n:'Kuldeep Yadav',     r:'Bowler',       co:'India',      b:1,   rt:82, m:80, ec:7.1,wk:100},
   {id:45,n:'Mohammed Siraj',    r:'Bowler',       co:'India',      b:1,   rt:82, m:70, ec:8.6,wk:75 },
