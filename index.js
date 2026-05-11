@@ -121,7 +121,7 @@ module.exports = function attachSockets(io) {
 
     /* ── DISCONNECT ─────────────────────── */
     socket.on('disconnect', () => {
-      console.log(`🔴 Socket disconnected: ${socket.id}`);
+      console.log(`🔴 Socket disconnected: ${socket.id}`); //print the msg if socket not working
     });
   });
 };
