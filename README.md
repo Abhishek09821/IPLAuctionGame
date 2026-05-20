@@ -101,7 +101,7 @@ All other routes require: `Authorization: Bearer <token>`
 
 | Event | Payload | Description |
 |-------|---------|-------------|
-| `room:join` | `{ roomId }` | Join a room |
+| `room:join` | `{ roomId }` | Join a room by using the room id |
 | `auction:start` | `{ roomId }` | Start auction (host only) |
 | `auction:bid` | `{ roomId }` | Place a bid on current player |
 | `season:simulate` | `{ roomId }` | Simulate league stage (host only) |
