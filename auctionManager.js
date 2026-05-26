@@ -1,6 +1,6 @@
 // src/socket/auctionManager.js
 /**
- * Real-time Auction Manager
+ * Real-time Auction Manager with an ai simulation 
  * ─────────────────────────
  * One AuctionRoom instance per active game room.
  * Manages: player queue · timer · human bids · AI bids · DB writes
