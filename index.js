@@ -103,25 +103,5 @@ module.exports = function attachSockets(io) {
       }
     });
 
-    /* ── SIMULATE PLAYOFFS ──────────────── */
-    socket.on('playoffs:simulate', async ({ roomId }, ack) => {
-      try {
-        const [[room]] = await db.query('SELECT * FROM rooms WHERE id=?', [roomId]);
-        if (!room)                  return ack({ error: 'Room not found' });
-        if (room.host_id !== socket.user.id) return ack({ error: 'Host only' });
-        if (room.status !== 'playoffs')      return ack({ error: 'Not in playoffs stage' });
-
-        const result = await simulatePlayoffs(roomId);
-        io.to(roomId).emit('playoffs:complete', result);
-        ack({ ok: true });
-      } catch (e) {
-        ack({ error: e.message });
-      }
-    });
-
-    /* ── DISCONNECT ─────────────────────── */
-    socket.on('disconnect', () => {
-      console.log(`🔴 Socket disconnected: ${socket.id}`); //print the msg if socket not working
-    });
-  });
-};
+  
+   
