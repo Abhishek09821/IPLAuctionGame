@@ -121,17 +121,6 @@ body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);mi
   display:inline-block;padding:.25rem .9rem;border-radius:50px;
   font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:.9rem;
 }
-.rb{background:rgba(0,212,255,.13);color:var(--cyan);border:1px solid rgba(0,212,255,.3);}
-.rbl{background:rgba(255,71,87,.13);color:var(--red);border:1px solid rgba(255,71,87,.3);}
-.rar{background:rgba(46,213,115,.13);color:var(--green);border:1px solid rgba(46,213,115,.3);}
-.rwk{background:rgba(245,166,35,.13);color:var(--gold);border:1px solid rgba(245,166,35,.3);}
-.pstats{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:.9rem;}
-.sb{background:rgba(255,255,255,.04);border-radius:8px;padding:.55rem;}
-.sv{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--gold);}
-.sl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
-.stars{font-size:1.1rem;color:var(--gold);}
-.bp{font-size:.85rem;color:var(--muted);}
-.bp span{color:var(--text);font-weight:700;}
 
 /* Bid center */
 .bc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.3rem;}
