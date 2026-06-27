@@ -43,11 +43,7 @@ body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);mi
 .screen{display:none;min-height:100vh;}
 .screen.active{display:flex;flex-direction:column;}
 
-/* ─── WELCOME ─────────────────────────────────── */
-#sw{
-  align-items:center;justify-content:center;position:relative;overflow:hidden;
-  background:var(--bg);
-}
+
 #sw::before{
   content:'';position:absolute;inset:0;
   background:
