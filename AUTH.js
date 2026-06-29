@@ -1,29 +1,6 @@
 
 
-// Quick connectivity test (non-fatal during startup)
-pool.getConnection()
-  .then(conn => { console.log('✅  MySQL connected'); conn.release(); })
-  .catch(err  => console.error('❌  MySQL connection failed:', err.message));
 
-module.exports = pool;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Auction Simulator 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#060b18; --surface:#0d1526; --card:#131d33; --border:#1e2d4a;
-  --gold:#f5a623; --gold2:#ffd166; --cyan:#00d4ff; --red:#ff4757;
-  --green:#2ed573; --purple:#9b59b6; --text:#e8eaf0; --muted:#8892a4;
-  --r:12px;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html,body{height:100%;}
-body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
 
 /* ─── SCREENS ─────────────────────────────────── */
 .screen{display:none;min-height:100vh;}
