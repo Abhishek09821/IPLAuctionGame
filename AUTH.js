@@ -2,48 +2,6 @@
 
 
 
-/* ─── SCREENS ─────────────────────────────────── */
-.screen{display:none;min-height:100vh;}
-.screen.active{display:flex;flex-direction:column;}
-
-
-#sw::before{
-  content:'';position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 60% 40% at 50% 0%,rgba(245,166,35,.18) 0%,transparent 60%),
-    radial-gradient(ellipse 80% 60% at 50% 100%,rgba(0,212,255,.08) 0%,transparent 60%);
-}
-.wc{text-align:center;z-index:1;max-width:920px;padding:2rem;}
-.badge{
-  display:inline-block;background:rgba(245,166,35,.14);border:1px solid rgba(245,166,35,.4);
-  color:var(--gold);padding:.35rem 1.2rem;border-radius:50px;font-size:.8rem;
-  font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:1.5rem;
-}
-.wt{
-  font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,7rem);line-height:.9;
-  background:linear-gradient(130deg,var(--gold) 0%,#fff 45%,var(--cyan) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  margin-bottom:.6rem;
-}
-.ws{font-size:1.15rem;color:var(--muted);margin-bottom:2.5rem;letter-spacing:1px;}
-.tsl{font-size:1rem;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;}
-.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:2rem;}
-.tc{
-  background:var(--card);border:2px solid var(--border);border-radius:var(--r);
-  padding:.9rem .5rem;cursor:pointer;transition:all .2s;text-align:center;
-}
-.tc:hover,.tc.sel{border-color:var(--gold);background:rgba(245,166,35,.09);transform:translateY(-3px);}
-.tc.sel{box-shadow:0 0 20px rgba(245,166,35,.28);}
-.te{font-size:1.9rem;display:block;margin-bottom:.35rem;}
-.ts{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;}
-.tn{font-size:.68rem;color:var(--muted);margin-top:.15rem;}
-.bstart{
-  background:linear-gradient(135deg,var(--gold),#e8920a);color:#000;border:none;
-  padding:.95rem 3rem;font-family:'Bebas Neue',sans-serif;font-size:1.55rem;letter-spacing:3px;
-  border-radius:50px;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(245,166,35,.3);
-}
-.bstart:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,.4);}
-.bstart:disabled{opacity:.35;cursor:not-allowed;transform:none;}
 
 /* ─── AUCTION SCREEN ──────────────────────────── */
 #sa{background:var(--bg);}
