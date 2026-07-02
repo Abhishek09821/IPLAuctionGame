@@ -37,10 +37,10 @@ CREATE TABLE IF NOT EXISTS teams (
 ───────────────────────────────────────── */
 CREATE TABLE IF NOT EXISTS players (
   id          INT          AUTO_INCREMENT PRIMARY KEY,
-  name        VARCHAR(100) NOT NULL,
+  name        VARCHAR(120) NOT NULL,
   country     VARCHAR(60)  NOT NULL,
   role        ENUM('Batsman','Bowler','All-Rounder','Wicket-Keeper') NOT NULL,
-  base_price  DECIMAL(6,2) NOT NULL,
+  base_price  DECIMAL(7,2) NOT NULL,
   rating      TINYINT      NOT NULL DEFAULT 70,
   matches     SMALLINT     DEFAULT 0,
   batting_avg DECIMAL(5,2) DEFAULT NULL,
