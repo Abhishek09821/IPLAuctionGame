@@ -1,44 +1,5 @@
 
 
-
-
-
-/* ─── AUCTION SCREEN ──────────────────────────── */
-#sa{background:var(--bg);}
-.ah{
-  background:var(--surface);border-bottom:1px solid var(--border);
-  padding:.7rem 1.8rem;display:flex;align-items:center;justify-content:space-between;
-  flex-shrink:0;
-}
-.ah h1{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold);letter-spacing:3px;}
-.aprog{font-size:.85rem;color:var(--muted);}
-.am{
-  flex:1;display:grid;grid-template-columns:1fr 320px 270px;
-  gap:1.2rem;padding:1.2rem;overflow:hidden;min-height:0;
-}
-
-/* Player card */
-.ps{display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.pc{
-  background:var(--card);border:1px solid var(--border);border-radius:20px;
-  padding:1.8rem;text-align:center;width:100%;max-width:320px;position:relative;overflow:hidden;
-}
-.pc::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--gold),var(--cyan));
-}
-.pav{
-  width:90px;height:90px;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;font-size:2.6rem;margin:0 auto 1rem;
-  border:3px solid var(--border);background:rgba(255,255,255,.03);
-}
-.pn{font-family:'Bebas Neue',sans-serif;font-size:2rem;line-height:1;margin-bottom:.3rem;}
-.pco{font-size:.82rem;color:var(--muted);margin-bottom:.7rem;}
-.prb{
-  display:inline-block;padding:.25rem .9rem;border-radius:50px;
-  font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:.9rem;
-}
-
 /* Bid center */
 .bc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.3rem;}
 .tr{position:relative;width:130px;height:130px;flex-shrink:0;}
