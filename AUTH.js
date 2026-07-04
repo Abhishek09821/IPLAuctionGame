@@ -1,34 +1,5 @@
 
 
-/* Bid center */
-.bc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.3rem;}
-.tr{position:relative;width:130px;height:130px;flex-shrink:0;}
-.tr svg{transform:rotate(-90deg);}
-.tr circle{fill:none;stroke:var(--border);stroke-width:6;}
-.tr .prog{stroke:var(--gold);stroke-dasharray:345;stroke-dashoffset:0;transition:stroke-dashoffset 1s linear,stroke .3s;}
-.tt{
-  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-family:'Bebas Neue',sans-serif;font-size:2.8rem;
-}
-.cbl{font-size:.8rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
-.cbv{font-family:'Bebas Neue',sans-serif;font-size:3.8rem;color:var(--gold);line-height:1;}
-.cbd{font-size:.9rem;padding:.35rem 1.1rem;border-radius:50px;font-weight:600;}
-.bidbtn{
-  background:linear-gradient(135deg,var(--green),#26b564);color:#000;border:none;
-  padding:1.1rem 2rem;font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:2px;
-  border-radius:50px;cursor:pointer;transition:all .15s;
-  box-shadow:0 4px 20px rgba(46,213,115,.28);width:100%;
-}
-.bidbtn:hover:not(:disabled){transform:scale(1.03);box-shadow:0 6px 25px rgba(46,213,115,.4);}
-.bidbtn:disabled{background:var(--border);color:var(--muted);cursor:not-allowed;box-shadow:none;}
-.nbl{font-size:.8rem;color:var(--muted);margin-top:-.8rem;}
-.pbtn{
-  background:transparent;border:1px solid var(--border);color:var(--muted);
-  padding:.5rem 1.3rem;border-radius:50px;cursor:pointer;
-  font-family:'Rajdhani',sans-serif;font-size:.9rem;font-weight:600;transition:all .2s;
-}
-.pbtn:hover{border-color:var(--red);color:var(--red);}
-
 
 
 /* Flashes */
