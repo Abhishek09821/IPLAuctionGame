@@ -71,19 +71,7 @@ class AuctionRoom {
     this.aiTimers = [];
   }
 
-  /* ── Human bid ───────────────────────────── */
-  humanBid(teamId) {
-    const team   = this.teams.find(t => t.id === teamId);
-    const nextB  = calcNextBid(this.curBid);
-    if (!team)               return { error: 'Team not found' };
-    if (team.id === this.leader) return { error: 'You are already the highest bidder' };
-    if (nextB > team.budget) return { error: 'Insufficient budget' };
-    if (team.squad.length >= 15) return { error: 'Squad full' };
 
-    this._recordBid(team, nextB);
-    this._resetTimer();
-    return { ok: true };
-  }
 
   /* ── AI bids ─────────────────────────────── */
   _scheduleAI() {
