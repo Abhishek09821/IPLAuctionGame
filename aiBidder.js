@@ -26,14 +26,7 @@ function evaluate(team, player, currentBid, currentLeader) {
   if (team.squad.length >= MAX_SQUAD) return null;
   if (team.budget < 2)             return null;  // Keep emergency reserve
 
-  // Role balance check
-  const roleCount = team.squad.filter(p => p.role === player.role).length;
-  const limit     = ROLE_LIMITS[player.role] || 3;
-  if (roleCount >= limit) return null;
-
-  // How desperate is the team for this role?
-  const desperacy = team.squad.length < 5 ? 1.4 :
-                    team.squad.length < 9 ? 1.1 : 0.95;
+ 
 
   // Max willingness to pay (based on rating, budget, desperation)
   const maxWilling = (player.rating / 100) * 20 * desperacy * (0.75 + Math.random() * 0.65);
