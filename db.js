@@ -16,8 +16,8 @@ const pool = mysql.createPool({
 
 // Quick connectivity test (non-fatal during startup)
 pool.getConnection()
-  .then(conn => { console.log('✅  MySQL connected'); conn.release(); })
-  .catch(err  => console.error('❌  MySQL connection failed:', err.message));
+  .then(conn => { console.log(' MySQL connected'); conn.release(); })
+  .catch(err  => console.error(' MySQL connection failed:', err.message));
 
 module.exports = pool;
 <!DOCTYPE html>
