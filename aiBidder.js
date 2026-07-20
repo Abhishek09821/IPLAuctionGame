@@ -7,8 +7,8 @@
  */
 
 const ROLE_LIMITS = {
-  Batsman:          6,
-  Bowler:           5,
+  Batsman:          10,
+  Bowler:           7,
   'All-Rounder':    4,
   'Wicket-Keeper':  2,
 };
