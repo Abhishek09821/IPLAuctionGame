@@ -7,10 +7,10 @@
  */
 
 const ROLE_LIMITS = {
-  Batsman:          10,
-  Bowler:           7,
-  'All-Rounder':    4,
-  'Wicket-Keeper':  2,
+  Batsman:          6,
+  Bowler:           5,
+  'All-Rounder':    6,
+  'Wicket-Keeper':  3,
 };
 const MAX_SQUAD = 15;
 
