@@ -1,9 +1,4 @@
-// src/socket/index.js
-const jwt    = require('jsonwebtoken');
-const db     = require('../config/db');
-const am     = require('./auctionManager');
-const { simulateLeague, simulatePlayoffs } = require('../services/matchSimulator');
-
+ /
 /**
  * Attach Socket.io logic to the HTTP server.
  * Called once from server.js.
