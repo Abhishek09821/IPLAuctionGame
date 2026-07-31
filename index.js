@@ -55,14 +55,7 @@ module.exports = function attachSockets(io) {
 
     
 
-    /* ── PLACE BID ──────────────────────── */
-    socket.on('auction:bid', ({ roomId }, ack) => {
-      if (!socket.teamId) return ack({ error: 'No team assigned' });
-      const aRoom = am.getRoom(roomId);
-      if (!aRoom)  return ack({ error: 'Auction not active' });
-      const result = aRoom.humanBid(socket.teamId);
-      ack(result);
-    });
+  
 
     /* ── SIMULATE SEASON ────────────────── */
     socket.on('season:simulate', async ({ roomId }, ack) => {
