@@ -53,24 +53,7 @@ module.exports = function attachSockets(io) {
       }
     });
 
-    /* ── START AUCTION (host only) ──────── */
-    socket.on('auction:start', async ({ roomId }, ack) => {
-      try {
-        const [[room]] = await db.query('SELECT * FROM rooms WHERE id=?', [roomId]);
-        if (!room)              return ack({ error: 'Room not found' });
-        if (room.host_id !== socket.user.id)
-          return ack({ error: 'Only the host can start' });
-        if (room.status !== 'waiting')
-          return ack({ error: 'Auction already started' });
-
-        await db.query("UPDATE rooms SET status='auction' WHERE id=?", [roomId]);
-        const aRoom = await am.initRoom(io, roomId);
-        aRoom.start();
-        ack({ ok: true });
-      } catch (e) {
-        ack({ error: e.message });
-      }
-    });
+    
 
     /* ── PLACE BID ──────────────────────── */
     socket.on('auction:bid', ({ roomId }, ack) => {
