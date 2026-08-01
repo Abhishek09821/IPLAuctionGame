@@ -65,21 +65,6 @@ function clamp(num, min, max) {
   return Math.max(min, Math.min(max, num));
 }
 
-/**
- * =========================================================
- * PLAYER FORM SYSTEM
- * =========================================================
- */
-
-function applyPlayerForm(player) {
-  const form = rand(-8, 12);
-
-  return {
-    ...player,
-    effectiveRating: player.rating + form,
-    form
-  };
-}
 
 /**
  * =========================================================
