@@ -57,22 +57,7 @@ module.exports = function attachSockets(io) {
 
   
 
-    /* ── SIMULATE SEASON ────────────────── */
-    socket.on('season:simulate', async ({ roomId }, ack) => {
-      try {
-        const [[room]] = await db.query('SELECT * FROM rooms WHERE id=?', [roomId]);
-        if (!room)                  return ack({ error: 'Room not found' });
-        if (room.host_id !== socket.user.id) return ack({ error: 'Host only' });
-        if (room.status !== 'season')        return ack({ error: 'Not in season stage' });
-
-        io.to(roomId).emit('season:started');
-        const results = await simulateLeague(roomId);
-        io.to(roomId).emit('season:complete', { results });
-        ack({ ok: true });
-      } catch (e) {
-        ack({ error: e.message });
-      }
-    });
+   
 
   
    
