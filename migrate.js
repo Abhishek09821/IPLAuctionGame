@@ -50,17 +50,7 @@ CREATE TABLE IF NOT EXISTS players (
   created_at  TIMESTAMP    DEFAULT CURRENT_TIMESTAMP
 );
 
-/* ─────────────────────────────────────────
-   ROOMS
-───────────────────────────────────────── */
-CREATE TABLE IF NOT EXISTS rooms (
-  id          VARCHAR(36)  PRIMARY KEY,
-  host_id     INT          NOT NULL,
-  status      ENUM('waiting','auction','season','playoffs','finished')
-              NOT NULL DEFAULT 'waiting',
-  created_at  TIMESTAMP    DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (host_id) REFERENCES users(id)
-);
+
 
 /* ─────────────────────────────────────────
    AUCTION RESULTS
