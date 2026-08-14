@@ -143,17 +143,7 @@ function squadStrength(squad, pitchType = 'balanced') {
     allRound += 3;
   }
 
-  /**
-   * Squad Balance Bonus
-   */
-
-  const balanced =
-    batters >= 4 &&
-    bowlers >= 4 &&
-    allRounders >= 2 &&
-    keepers >= 1;
-
-  const balanceBonus = balanced ? 7 : -5;
+  
 
   /**
    * Random chaos / upset factor
