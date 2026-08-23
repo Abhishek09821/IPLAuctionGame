@@ -1,8 +1,4 @@
- /
-/**
- * Attach Socket.io logic to the HTTP server.
- * Called once from server.js.
- */
+
 module.exports = function attachSockets(io) {
 
   /* ── Auth middleware ────────────────────── */
