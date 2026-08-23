@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS teams (
 CREATE TABLE IF NOT EXISTS players (
   id          INT          AUTO_INCREMENT PRIMARY KEY,
   name        VARCHAR(120) NOT NULL,
-  country     VARCHAR(60)  NOT NULL,
+  country     VARCHAR(65)  NOT NULL,
   role        ENUM('Batsman','Bowler','All-Rounder','Wicket-Keeper') NOT NULL,
   base_price  DECIMAL(7,2) NOT NULL,
   rating      TINYINT      NOT NULL DEFAULT 70,
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS players (
 ───────────────────────────────────────── */
 CREATE TABLE IF NOT EXISTS auctions (
   id          INT          AUTO_INCREMENT PRIMARY KEY,
-  room_id     VARCHAR(36)  NOT NULL,
+  room_id     VARCHAR(40)  NOT NULL,
   player_id   INT          NOT NULL,
   team_id     INT          DEFAULT NULL,   -- NULL = unsold
   sold_price  DECIMAL(6,2) DEFAULT NULL,
