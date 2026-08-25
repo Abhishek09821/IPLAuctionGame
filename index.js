@@ -1,5 +1,4 @@
 
-module.exports = function attachSockets(io) {
 
   /* ── Auth middleware ────────────────────── */
   io.use((socket, next) => {
