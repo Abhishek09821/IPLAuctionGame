@@ -64,21 +64,3 @@ router.post('/', auth, async (req, res) => {
   }
 });
 
-/* ── GET /api/rooms/:roomId ────────────────────── */
-router.get('/:roomId', auth, async (req, res) => {
-  const { roomId } = req.params;
-  try {
-    const [[room]] = await db.query('SELECT * FROM rooms WHERE id = ?', [roomId]);
-    if (!room) return res.status(404).json({ error: 'Room not found' });
-
-    const [teams] = await db.query(
-      'SELECT * FROM teams WHERE room_id = ? ORDER BY id', [roomId]
-    );
-    res.json({ room, teams });
-  } catch (e) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-
-module.exports = router;
