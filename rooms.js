@@ -10,8 +10,6 @@ const IPL_TEAMS = [
   { name:'Royal Challengers',     short_name:'RCB',  color:'#EC1C24', emoji:'❤️' },
   { name:'Kolkata Knight Riders', short_name:'KKR',  color:'#3A225D', emoji:'💜' },
   { name:'Delhi Capitals',        short_name:'DC',   color:'#4169E1', emoji:'🔵' },
-  { name:'Rajasthan Royals',      short_name:'RR',   color:'#E73C92', emoji:'💗' },
-  { name:'Sunrisers Hyderabad',   short_name:'SRH',  color:'#F7A721', emoji:'🧡' },
   { name:'Punjab Kings',          short_name:'PBKS', color:'#ED1F27', emoji:'🔴' },
 ];
 
