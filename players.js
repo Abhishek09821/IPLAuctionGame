@@ -54,8 +54,6 @@ mRouter.get('/:roomId', auth, async (req, res) => {
   }
 });
 
-/* ── GET /api/points/:roomId ───────────────── */
-const pRouter = require('express').Router();
 
 
 
