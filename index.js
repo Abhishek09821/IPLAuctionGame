@@ -37,16 +37,7 @@
         const [players] = await db.query('SELECT * FROM players');
         ack({ ok: true, room, teams, players, yourTeamId: socket.teamId });
 
-        // Notify others
-        socket.to(roomId).emit('room:player_joined', {
-          userId  : socket.user.id,
-          username: socket.user.username,
-          teamId  : socket.teamId,
-        });
-      } catch (e) {
-        ack({ error: e.message });
-      }
-    });
+        
 
     
 
