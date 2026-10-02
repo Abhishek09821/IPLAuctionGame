@@ -67,19 +67,7 @@ body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);mi
 .bstart:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,.4);}
 .bstart:disabled{opacity:.35;cursor:not-allowed;transform:none;}
 
-/* ─── AUCTION SCREEN ──────────────────────────── */
-#sa{background:var(--bg);}
-.ah{
-  background:var(--surface);border-bottom:1px solid var(--border);
-  padding:.7rem 1.8rem;display:flex;align-items:center;justify-content:space-between;
-  flex-shrink:0;
-}
-.ah h1{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold);letter-spacing:3px;}
-.aprog{font-size:.85rem;color:var(--muted);}
-.am{
-  flex:1;display:grid;grid-template-columns:1fr 320px 270px;
-  gap:1.2rem;padding:1.2rem;overflow:hidden;min-height:0;
-}
+
 
 /* Player card */
 .ps{display:flex;flex-direction:column;align-items:center;justify-content:center;}
