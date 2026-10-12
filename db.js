@@ -1,6 +1,6 @@
 
 
-module.exports = pool;
+module.exports = pool
 <!DOCTYPE html>
 <html lang="en">
 <head>
