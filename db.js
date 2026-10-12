@@ -19,7 +19,6 @@ module.exports = pool
 *{margin:0;padding:0;box-sizing:border-box;}
 html,body{height:100%;}
 body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
-
 /* ─── SCREENS ─────────────────────────────────── */
 .screen{display:none;min-height:100vh;}
 .screen.active{display:flex;flex-direction:column;}
