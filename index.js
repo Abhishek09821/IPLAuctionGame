@@ -8,7 +8,7 @@
       socket.user = jwt.verify(token, process.env.JWT_SECRET);
       next();
     } catch {
-      next(new Error('Invalid token'));
+      next(new Error('Invalid token id'));
     }
   });
 
