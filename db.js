@@ -92,7 +92,7 @@ body{font-family:'Rajdhani',sans-serif;background:var(--bg);color:var(--text);mi
 .rb{background:rgba(0,212,255,.13);color:var(--cyan);border:1px solid rgba(0,212,255,.3);}
 .rbl{background:rgba(255,71,87,.13);color:var(--red);border:1px solid rgba(255,71,87,.3);}
 .rar{background:rgba(46,213,115,.13);color:var(--green);border:1px solid rgba(46,213,115,.3);}
-.rwk{background:rgba(245,166,35,.13);color:var(--gold);border:1px solid rgba(245,166,35,.3);}
+
 .pstats{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:.9rem;}
 .sb{background:rgba(255,255,255,.04);border-radius:8px;padding:.55rem;}
 .sv{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--gold);}
