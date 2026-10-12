@@ -14,7 +14,7 @@
 
   /* ── Connection ─────────────────────────── */
   io.on('connection', socket => {
-    console.log(`🟢 Socket connected: ${socket.id} (user ${socket.user.id})`);
+    console.log(` Socket connected: ${socket.id} (user ${socket.user.id})`);
 
     /* ── JOIN ROOM ──────────────────────── */
     socket.on('room:join', async ({ roomId }, ack) => {
