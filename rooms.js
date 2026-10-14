@@ -36,7 +36,7 @@ router.post('/', auth, async (req, res) => {
       const uid  = isAI ? null : userId;
       await conn.query(
         `INSERT INTO teams (room_id,name,short_name,color,emoji,budget,is_ai,user_id)
-         VALUES (?,?,?,?,?,100.00,?,?)`,
+         VALUES (?,?,?,?,?,120.00,?,?)`,
         [roomId, t.name, t.short_name, t.color, t.emoji, isAI, uid]
       );
     }
