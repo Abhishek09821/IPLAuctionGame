@@ -38,11 +38,11 @@ mRouter.get('/:roomId', auth, async (req, res) => {
     const [rows] = await db.query(
       `SELECT m.*,
               t.name AS team_name, t.short_name AS t_short, t.color AS t_color,
-              t2.name AS team2_name, t2.short_name AS t2_short, t2.color AS t2_color,
+             
               w.name  AS winner_name
        FROM matches m
-       JOIN teams t1 ON t1.id = m.team1_id
-       JOIN teams t2 ON t2.id = m.team2_id
+       JOIN teams t ON t.id = m.team_id
+      
        LEFT JOIN teams w ON w.id = m.winner_id
        WHERE m.room_id = ?
        ORDER BY m.played_at DESC`,
