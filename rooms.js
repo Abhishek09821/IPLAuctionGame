@@ -7,7 +7,7 @@ const auth   = require('../middleware/auth');
 const IPL_TEAMS = [
   { name:'Mumbai Indians',        short_name:'MI',   color:'#004BA0', emoji:'💙' },
   { name:'Chennai Super Kings',   short_name:'CSK',  color:'#F9CD05', emoji:'💛' },
-  { name:'Royal Challengers',     short_name:'RCB',  color:'#EC1C24', emoji:'❤️' },
+  { name:'Royal Challengers Banglore',     short_name:'RCB',  color:'#EC1C24', emoji:'❤️' },
   { name:'Kolkata Knight Riders', short_name:'KKR',  color:'#3A225D', emoji:'💜' },
   { name:'Delhi Capitals',        short_name:'DC',   color:'#4169E1', emoji:'🔵' },
   { name:'Punjab Kings',          short_name:'PBKS', color:'#ED1F27', emoji:'🔴' },
